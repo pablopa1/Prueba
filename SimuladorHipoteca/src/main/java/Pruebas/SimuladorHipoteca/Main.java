@@ -6,7 +6,7 @@ public class Main {
     public static void main( String[] args ){
     	  	
     	Scanner sc = new Scanner(System.in);
-    	System.out.println("Meto una linea de algo");
+    	System.out.println("Cambio para probar rama");
         System.out.println( "Elija tipo de inter�s (1/2)" );
         System.out.println("1. Tipo fijo");
         System.out.println("2. Tipo variable");
