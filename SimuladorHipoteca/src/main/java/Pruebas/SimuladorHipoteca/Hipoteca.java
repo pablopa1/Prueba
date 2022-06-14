@@ -80,5 +80,11 @@ public abstract class Hipoteca {
 		this.anios = anios;
 	}
 
-
+	@Override
+	public String toString() {
+		return "Hipoteca [cantidadTotal=" + cantidadTotal + ", anios=" + anios + ", cuotaAmortizacion="
+				+ cuotaAmortizacion + ", totalAmortizado=" + totalAmortizado + ", porAmortizar=" + porAmortizar
+				+ ", cantidadIntereses=" + cantidadIntereses + ", anualidad=" + anualidad + "]";
+	}
+	
 }
