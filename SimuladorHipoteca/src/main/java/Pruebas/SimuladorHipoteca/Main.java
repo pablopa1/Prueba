@@ -18,16 +18,23 @@ public class Main {
         System.out.println("Nï¿½mero de aï¿½os:");
         int anios = sc.nextInt();
         
-        if (opcion == 1) { 
-        	
-        	TipoFijo t = new TipoFijo(cantidadTotal,anios);
-        	t.calculo(t.getInteres());
-        	
-        } else if (opcion == 2) {
-        	
-        	TipoVariable t = new TipoVariable(cantidadTotal,anios);
-        	t.calculo(t.getInteresFijo());
-        }
+        do {
+	        if (opcion == 1) { 
+	        	
+	        	TipoFijo t = new TipoFijo(cantidadTotal,anios);
+	        	t.calculo(t.getInteres());
+	        	
+	        } else if (opcion == 2) {
+	        	
+	        	TipoVariable t = new TipoVariable(cantidadTotal,anios);
+	        	t.calculo(t.getInteresFijo());
+	        } else {
+	        	
+	        	System.out.println("Introduce una opción válida");
+	        	System.out.println();
+	        	
+	        }
+        }while (opcion!=1 && opcion !=2);
         
         sc.close();
     }
